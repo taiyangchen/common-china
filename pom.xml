@@ -12,56 +12,11 @@
 	</properties>
 
 	<repositories>
-		<repository>
-			<id>shenma-nexus-snapshots</id>
-			<name>local private nexus</name>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/repositories/snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>shenma-nexus-releases</id>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>shenma-nexus-public</id>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/groups/public</url>
-		</repository>
-		<repository>
-			<id>shenma-nexus-public-snapshots</id>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/groups/public-snapshots</url>
-		</repository>
-		<repository>
-			<id>nexus</id>
-			<name>local private nexus</name>
-			<url>http://maven.oschina.net/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>cloudera</id>
-			<url>http://repo1.maven.org/maven2/org/apache/hbase/hbase/0.98.0-hadoop1/</url>
-		</repository>
+		
 	</repositories>
 
 	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Shenma Release Repository</name>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Shenma Snapshot Repository</name>
-			<url>http://hc-repo.alibaba.net:8081/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
+		
 	</distributionManagement>
 
 	<dependencies>
@@ -69,18 +24,6 @@
 			<groupId>com.sm.common</groupId>
 			<artifactId>common-libs</artifactId>
 			<version>${common-libs.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.ow2.asm</groupId>
-			<artifactId>asm-commons</artifactId>
-			<version>5.0.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.ow2.asm</groupId>
-			<artifactId>asm</artifactId>
-			<version>5.0.4</version>
 		</dependency>
 
 		<dependency>
