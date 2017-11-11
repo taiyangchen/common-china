@@ -36,17 +36,17 @@ public class IpManagerTest extends LoggerSupport {
 
   }
 
-  @Test
-  public void testNew() {
-    // 30.27.36.93
-    ipManager = new LazyLoadIpFactory().getDefaultIpManager();
-    IpEntry ipEntry = ipManager.getIpInfo("30.27.36.93");
-    logger.info(ipEntry.getCountry());
-    logger.info(ipEntry.getProvince());
-    logger.info(ipEntry.getCity());
-    logger.info(ipEntry.getAddress());
-
-  }
+  // @Test
+  // public void testNew() {
+  // // 30.27.36.93
+  // ipManager = new LazyLoadIpFactory().getDefaultIpManager();
+  // IpEntry ipEntry = ipManager.getIpInfo("30.27.36.93");
+  // logger.info(ipEntry.getCountry());
+  // logger.info(ipEntry.getProvince());
+  // logger.info(ipEntry.getCity());
+  // logger.info(ipEntry.getAddress());
+  //
+  // }
 
   @Test
   public void getIpLocation() {
